@@ -1,6 +1,4 @@
 <script setup lang="js">
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { ref, onMounted } from 'vue';
 import { fetchDataFromAPI } from './functions/functions.js';
 import axios from 'axios';
@@ -35,6 +33,7 @@ const closeModal = () => {
   isModalOpen.value = false;
   selectedCountry.value = null;
 };
+
 </script>
 
 <template>
@@ -42,7 +41,6 @@ const closeModal = () => {
     <div class="flex justify-center items-center">
       <div class="flex rounded bg-zinc-700 p-3 w-96 border border-cyan-50">
         <input class="bg-zinc-700 flex-1 outline-none text-sm" type="text" id="" name="" placeholder="pesquisar" />
-        <FontAwesomeIcon :icon="faSearch" />
       </div>
     </div>
 
