@@ -33,7 +33,6 @@ const closeModal = () => {
   isModalOpen.value = false;
   selectedCountry.value = null;
 };
-
 </script>
 
 <template>
